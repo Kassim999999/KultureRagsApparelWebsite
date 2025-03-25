@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Silkscreen:wght@400;700&display=swap');
+
+:root{
+    --header-font: 'Silkscreen', serif;
+    --body-font: 'Alfa Slab One', serif;
+    --kltr-color: #a93cb7;
+    --star-color: #111;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: var(--body-font);
+}
+
+
+h1,h2{
+    font-family: var(--header-font);
+}
+
+
+.header-logo{
+    height:100px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 60px;
+}
+
+.pgtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--kltr-color);
+    font-size: 60px;
+    padding: 60px;
+
+}
+
+nav{
+    display: flex;
+    padding: 24px;
+
+
+    a{
+        color:var(--star-color);
+        font-weight: 700;
+        padding: 8px 15px;
+        letter-spacing: 1px;
+    }
+
+
+}
+
+
+.bar, nav a:hover{
+      color: var(--kltr-color);
+}
