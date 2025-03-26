@@ -18,3 +18,4 @@ function fetchProducts() {
     .catch(err => console.log(err)
     )
 }
+
