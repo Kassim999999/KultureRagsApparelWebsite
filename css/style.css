@@ -15,6 +15,7 @@
 
 body{
     font-family: var(--body-font);
+    color: aliceblue;
 }
 
 .main{

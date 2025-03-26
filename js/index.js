@@ -1,4 +1,4 @@
-let baseUrl = "https://phase-1-project-backend-rho.vercel.app/products"
+let baseUrl = "https://phase-1-project-backend-rho.vercel.app/products";
 
 document.addEventListener("DOMContentLoaded", () => {
     fetchProducts();
@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
 function fetchProducts() {
     fetch(baseUrl)
         .then(res => res.json())
@@ -19,25 +18,23 @@ function fetchProducts() {
 }
 
 function displayProducts(products) {
-    
-    let product_catalog = document.getElementById('product-catalog')
+    let product_catalog = document.getElementById('product-catalog');
     product_catalog.innerHTML = '';
 
     products.forEach(product => {
-        let html = `<div class="single-product">
+        let html = `<div class="single-product" data-id="${product.id}">
             <h5>${product.title}</h5>
             <img src="${product.image}" alt="${product.title}">
             <p>${product.description}...</p>
             <div>${product.category}</div>
             <div>$ ${product.price}</div>
-            <div id= "buttons">
-            <button class= " one update">Update</button>
-            <button id="delete-button" class= "one delete" onclick= "deleteProduct(${product.id})">Delete</button>
+            <div id="buttons">
+                <button class="one update">Update</button>
+                <button class="one delete" onclick="deleteProduct('${product.id}')">Delete</button>
             </div>
-        </div>`
+        </div>`;
 
-
-        product_catalog.innerHTML += html
+        product_catalog.innerHTML += html;
     });
 }
 
@@ -72,19 +69,25 @@ function addProduct() {
 }
 
 function deleteProduct(product_id) {
+    console.log(`Deleting product with ID: ${product_id}`);
     fetch(`${baseUrl}/${product_id}`, {
         method: "DELETE",
         headers: {
             "Content-Type": "application/json"
         }
     })
-    .then(res => res.json())
-    .then(data => console.log(data)
-    )
-    .catch(err => console.log(err)
-    )
+    .then(res => {
+        if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+        }
+        return res.json();
+    })
+    .then(data => {
+        console.log("Product deleted:", data);
+        fetchProducts(); // Refresh the product list after deletion
+    })
+    .catch(err => console.log("Delete error:", err));
 }
-
 
 
 
