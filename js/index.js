@@ -56,7 +56,19 @@ function addProduct() {
         price
     };
 
-   
+    fetch(baseUrl, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newProduct)
+    })
+    .then(res => res.json())
+    .then(data => {
+        console.log("Product added:", data);
+        fetchProducts();
+    })
+    .catch(err => console.log(err));
 }
 
 
