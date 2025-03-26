@@ -4,7 +4,7 @@
             "id": "1",
             "name": "Kulture White Tee",
             "price": 100,
-            "imageURL": "/images/WHITE FRONT klt.png"
+            "imageURL": "https://imgur.com/DBI3AHn"
         },
 
         {
@@ -18,21 +18,21 @@
             "id": "3",
             "name": "Kulture Grey Tee",
             "price": 100,
-            "imageURL": "/images/GREY FRONT.png"
+            "imageURL": "https://imgur.com/jtHsKK0"
         },
 
         {
             "id": "4",
             "name": "Kulture Brown Tee",
             "price": 100,
-            "imageURL": "/images/CHOCOLATE.png"
+            "imageURL": "https://imgur.com/cSWBJbp"
         },
 
         {
             "id": "5",
             "name": "Kulture Pink Tee",
             "price": 100,
-            "imageURL": "/images/PINK.png"
+            "imageURL": "https://imgur.com/4lg7Cbn"
         }
     ]
 }
