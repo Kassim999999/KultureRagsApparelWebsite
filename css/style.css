@@ -17,8 +17,12 @@ body{
     font-family: var(--body-font);
 }
 
-#main{
-    background-image: url(..images);
+.main{
+    background-image: url(../images/Virgil\ Abloh_\ His\ Life\ in\ Photos.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
 }
 
 
