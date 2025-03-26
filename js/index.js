@@ -1,4 +1,4 @@
-let baseUrl = "http://localhost:3000/products"
+let baseUrl = "https://phase-1-project-backend-rho.vercel.app/products"
 
 document.addEventListener("DOMContentLoaded", () => {
     fetchProducts();
