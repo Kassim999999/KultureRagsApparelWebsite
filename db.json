@@ -1,35 +1,35 @@
 {
     "products": [
         {
-            "id": 1,
+            "id": "1",
             "name": "Kulture White Tee",
             "price": 100,
             "imageURL": "/images/WHITE FRONT klt.png"
         },
 
         {
-            "id": 2,
+            "id": "2",
             "name": "Kulture Black Tee",
             "price": 100,
             "imageURL": "/images/BLACK FRONT klt.png"
         },
 
         {
-            "id": 3,
+            "id": "3",
             "name": "Kulture Grey Tee",
             "price": 100,
             "imageURL": "/images/GREY FRONT.png"
         },
 
         {
-            "id": 4,
+            "id": "4",
             "name": "Kulture Brown Tee",
             "price": 100,
             "imageURL": "/images/CHOCOLATE.png"
         },
 
         {
-            "id": 5,
+            "id": "5",
             "name": "Kulture Pink Tee",
             "price": 100,
             "imageURL": "/images/PINK.png"
