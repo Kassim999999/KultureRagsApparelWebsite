@@ -24,7 +24,7 @@ function fetchProducts() {
 function displayProducts(product) {
     const productsInfo = document.getElementById('products-info')
     document.querySelector('#name').textContent = product.name;
-    document.querySelector('#image').src = product.image;
+    document.querySelector('#image').src = `images/${product.image}`;
     document.querySelector('#image').alt = product.name;
     document.querySelector('#price').textContent = product.price;
 }
