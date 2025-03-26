@@ -1,8 +1,27 @@
 let baseUrl = "http://localhost:3000/products"
 
+document.addEventListener("DOMContentLoaded", () => {
+    fetchProducts();
+
+    const productForm = document.getElementById('form');
+    productForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+        addProduct();
+    });
+});
+
+
+function fetchProducts() {
+    fetch(baseUrl)
+        .then(res => res.json())
+        .then(data => displayProducts(data))
+        .catch(err => console.log(err));
+}
+
 function displayProducts(products) {
     
     let product_catalog = document.getElementById('product-catalog')
+    product_catalog.innerHTML = '';
 
     products.forEach(product => {
         let html = `<div class="single-product">
@@ -22,59 +41,8 @@ function displayProducts(products) {
     });
 }
 
-fetch(baseUrl)
-.then(res => res.json()
-)
-.then(data => displayProducts(data))
-.catch(err => console.log(err)
-)
 
 
-let form = document.getElementById('form')
-form.addEventListener('submit', (event) => {
-    event.preventDefault()
-    let product_title = document.getElementById('title').value
-    let product_image = document.getElementById('image').value
-    let product_price = document.getElementById('price').value
-    let product_description = document.getElementById('description').value
-    let product_category = document.getElementById('category').value
 
-    let product_object = {
-        title: product_title,
-        image: product_image,
-        price: product_price,
-        description: product_description,
-        category: product_category
-    }
-
-
-    fetch(baseUrl, {
-        method: "POST",
-        headers : {
-            "Content-Type" : "application/json"
-        },
-        body: JSON.stringify(product_object)
-    })
-    .then(res => res.json())
-    .then(data => console.log(data)
-    )
-    .catch(err => console.log(err)
-    )
-    
-})
-
-function deleteProduct(product_id) {
-    fetch(`${base_url}/${product_id}`, {
-        method: "DELETE",
-        headers: {
-            "Content-Type": "application/json"
-        }
-    })
-    .then(res => res.json())
-    .then(data => console.log(data)
-    )
-    .catch(err => console.log(err)
-    )
-}
 
 
