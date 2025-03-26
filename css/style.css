@@ -22,7 +22,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    
+    position: relative;
+
 }
 
 
@@ -39,7 +40,10 @@ h1,h2{
     align-items: center;
     width: 100%;
     padding-top: 60px;
+    position: absolute;
+    z-index: 10;
 }
+
 
 .pgtitle{
     display: flex;
