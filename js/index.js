@@ -71,7 +71,19 @@ function addProduct() {
     .catch(err => console.log(err));
 }
 
-
+function deleteProduct(product_id) {
+    fetch(`${baseUrl}/${product_id}`, {
+        method: "DELETE",
+        headers: {
+            "Content-Type": "application/json"
+        }
+    })
+    .then(res => res.json())
+    .then(data => console.log(data)
+    )
+    .catch(err => console.log(err)
+    )
+}
 
 
 
