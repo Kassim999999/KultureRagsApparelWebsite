@@ -77,30 +77,39 @@ nav{
 }
 
 
-#products-bar{
+#footer{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 15vh;
-    gap: 10px;
-    padding-bottom: 3vh;
-}
-
-#products-bar span{
-    display:flex;
     justify-content: center;
-    align-items: center;
-    padding: 1%;
-    height: 80%;
-    width: 20vh;
-    border: 1px solid purple;
-    background-color: lightgray;
-}
+    gap: 20px;
+    font-size: 48px;
+    padding: 250px 16px;
 
-#products-info{
-    height: 600px;
-    padding: 30px;
-    font-size: 24px;
-    text-align: center;
+
+    #Instagram{
+        a i{
+            color: #ff4500;
+        }
+    }
+
+
+    #X{
+        a i{
+            color: #111;
+        }
+    }
+
+
+    #Tiktok{
+        a i{
+            color: #3d2022;
+        }
+    }
+
+
+    #Pinterest{
+        a i{
+            color: red;
+        }
+    }
 }
 
