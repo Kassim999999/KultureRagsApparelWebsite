@@ -41,6 +41,24 @@ function displayProducts(products) {
     });
 }
 
+function addProduct() {
+    const title = document.getElementById('title').value;
+    const image = document.getElementById('image').value;
+    const description = document.getElementById('description').value;
+    const category = document.getElementById('category').value;
+    const price = document.getElementById('price').value;
+
+    const newProduct = {
+        title,
+        image,
+        description,
+        category,
+        price
+    };
+
+   
+}
+
 
 
 
