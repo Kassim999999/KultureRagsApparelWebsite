@@ -1,24 +1,24 @@
 {
-  "clothes": [
+  "Pieces": [
     {
       "id": 1,
       "name": "Kulture White Tee",
       "category": "Tee",
-      "price": 100,
+      "price": "Priceless",
       "image": "https://i.pinimg.com/474x/ec/a3/71/eca371fb0235dfd526332af1f3cc5853.jpg"
     },
     {
       "id": 2,
       "name": "Kulture Black Tee",
       "category": "Tee",
-      "price": 100,
+      "price": "Priceless",
       "image": "https://i.pinimg.com/474x/fb/82/48/fb8248675025082fa5d5b00b67132e7e.jpg"
     },
     {
       "id": 3,
       "name": "Kulture pink Tee",
       "category": "Tee",
-      "price": 100,
+      "price": "Priceless",
       "image": "https://i.pinimg.com/474x/85/22/37/8522371eded2673e268ee1077eccb0de.jpg"
     },
     {
@@ -26,27 +26,27 @@
       "name": "Kulture Chocolate Tee",
       "image": "https://i.pinimg.com/474x/25/5c/a7/255ca7ae24d04542e256fdf476ad003d.jpg",
       "category": "Tee",
-      "price": 100
+      "price": "Priceless"
     },
     {
       "id": 5,
       "name": "Kulture White Tee",
       "category": "Tee",
-      "price": 100,
+      "price": "Priceless",
       "image": "https://i.pinimg.com/474x/1f/aa/ae/1faaae89fe76e730a8f5d332fe7abab8.jpg"
     },
     {
       "id": 6,
       "name": "Kulture Black Tee",
       "category": "Tee",
-      "price": 100,
+      "price": "Priceless",
       "image": "https://i.pinimg.com/474x/95/d1/13/95d1134d7f1ce4479770d876680cdc5a.jpg"
     },
     {
       "id": 7,
       "name": "Kulture pink Tee",
       "category": "Tee",
-      "price": 100,
+      "price": "Priceless",
       "image": "https://i.pinimg.com/474x/94/b2/02/94b202e0c2645eae4993ab4250b272e2.jpg"
     },
     {
@@ -54,7 +54,7 @@
       "name": "Kulture Chocolate Tee",
       "image": "https://i.pinimg.com/474x/93/c1/80/93c180148927d975b9874403eec7dbab.jpg",
       "category": "Tee",
-      "price": 100
+      "price": "Priceless"
     }
   ]
 }

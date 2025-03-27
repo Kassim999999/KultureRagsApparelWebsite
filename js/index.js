@@ -1,4 +1,4 @@
-let baseUrl = "http://localhost:3000/clothes";
+let baseUrl = "http://localhost:3000/Pieces";
 
 document.addEventListener("DOMContentLoaded", () => {
     fetchProducts();
