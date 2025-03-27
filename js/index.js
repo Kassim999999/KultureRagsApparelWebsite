@@ -84,7 +84,7 @@ function deleteProduct(product_id) {
     })
     .then(data => {
         console.log("Product deleted:", data);
-        fetchProducts(); // Refresh the product list after deletion
+        fetchProducts();
     })
     .catch(err => console.log("Delete error:", err));
 }
