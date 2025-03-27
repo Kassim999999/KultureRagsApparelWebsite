@@ -113,11 +113,9 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid black;
     padding: 20px;
     margin-bottom: 2rem;
     width: 25%;
-    box-shadow: 10px 10px lightgray;
 }
 
 
@@ -143,14 +141,14 @@ nav{
 
     #X{
         a i{
-            color: #111;
+            color: #fff;
         }
     }
 
 
     #Tiktok{
         a i{
-            color: #3d2022;
+            color: purple;
         }
     }
 
