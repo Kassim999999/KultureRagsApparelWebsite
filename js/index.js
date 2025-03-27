@@ -1,4 +1,4 @@
-let baseUrl = "https://phase-1-project-backend-rho.vercel.app/products";
+let baseUrl = "http://localhost:3000/clothes";
 
 document.addEventListener("DOMContentLoaded", () => {
     fetchProducts();
@@ -23,9 +23,8 @@ function displayProducts(products) {
 
     products.forEach(product => {
         let html = `<div class="single-product" data-id="${product.id}">
-            <h5>${product.title}</h5>
+            <h5>${product.name}</h5>
             <img src="${product.image}" alt="${product.title}">
-            <p>${product.description}...</p>
             <div>${product.category}</div>
             <div>$ ${product.price}</div>
             <div id="buttons">
@@ -39,14 +38,14 @@ function displayProducts(products) {
 }
 
 function addProduct() {
-    const title = document.getElementById('title').value;
+    const title = document.getElementById('name').value;
     const image = document.getElementById('image').value;
     const description = document.getElementById('description').value;
     const category = document.getElementById('category').value;
     const price = document.getElementById('price').value;
 
     const newProduct = {
-        title,
+        name,
         image,
         description,
         category,
